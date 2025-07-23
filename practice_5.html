@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="practice_5.css">
+    <title>calculater</title>
+</head>
+<body>
+    <div id="calculater">
+
+      <div>
+        <input type="text" id="inpo" readonly>
+      </div> 
+
+      <div class="button_can">
+        <button id="cal_button"  onclick="display= display+'+';
+          document.querySelector('#inpo').value=display
+        
+        ">+</button>
+        <button id="cal_button"
+        onclick="display= display+'1';
+          document.querySelector('#inpo').value=display"
+        >1</button>
+        <button id="cal_button"
+        onclick="display= display+'2';
+          document.querySelector('#inpo').value=display"
+        >2</button>
+        <button id="cal_button" 
+        onclick="display= display+'3';
+          document.querySelector('#inpo').value=display"
+        >3</button>
+        <button id="cal_button" 
+        onclick="display= display+'-';
+          document.querySelector('#inpo').value=display"
+        >-</button>
+        <button id="cal_button" 
+        onclick="display= display+'4';
+          document.querySelector('#inpo').value=display"
+        >4</button>
+        <button id="cal_button"
+        onclick="display= display+'5';
+          document.querySelector('#inpo').value=display"
+        >5</button>
+        <button id="cal_button" 
+        onclick="display= display+'6';
+          document.querySelector('#inpo').value=display"
+        >6</button>
+        <button id="cal_button"
+        onclick="display= display+'*';
+          document.querySelector('#inpo').value=display"
+        >*</button>
+        <button id="cal_button" 
+        onclick="display= display+'7';
+          document.querySelector('#inpo').value=display"
+        >7</button>
+        <button id="cal_button" 
+        onclick="display= display+'8';
+          document.querySelector('#inpo').value=display"
+        >8</button>
+        <button id="cal_button" 
+        onclick="display= display+'9';
+          document.querySelector('#inpo').value=display"
+        >9</button>
+        <button id="cal_button" 
+        onclick="display= display+'/';
+          document.querySelector('#inpo').value=display"
+        >/</button>
+        <button id="cal_button"
+        onclick="display= display+'00';
+          document.querySelector('#inpo').value=display"
+        >00</button>
+        <button id="cal_button" 
+        onclick="display= display+'0';
+          document.querySelector('#inpo').value=display"
+        >0</button>
+        <button id="cal_button" 
+        onclick="display= display+'.';
+          document.querySelector('#inpo').value=display"
+        >.</button>
+        <button id="cal_button" 
+        onclick="display= '';
+          document.querySelector('#inpo').value=display"
+        >c</button>
+        <button id="cal_button"
+        onclick="display= eval(display);
+          document.querySelector('#inpo').value=display"
+        >=</button>
+      </div>   
+
+    </div>
+
+<script>
+  let display ='';
+  document.querySelector('#inpo').value=display;
+    
+</script>
+</body>
+</html>
